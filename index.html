@@ -3,85 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành CSS Danh sách</title>
+    <title>Bài tập Box Model 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Thực hành định kiểu danh sách bằng CSS</h1>
-
-    <!-- Bài 2: Thay đổi kiểu đánh dấu danh sách -->
-    <h2>2. Kiểu đánh dấu (list-style-type: square)</h2>
-    <ul class="task-square">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-    </ul>
-
-    <!-- Bài 3: Thay đổi kiểu đánh dấu danh sách có thứ tự -->
-    <h2>3. Số La Mã viết hoa (list-style-type: upper-roman)</h2>
-    <ol class="task-roman">
-        <li>Học HTML</li>
-        <li>Học CSS</li>
-        <li>Học JavaScript</li>
-        <li>Học Git</li>
-    </ol>
-
-    <!-- Bài 4: Sử dụng hình ảnh làm dấu đánh dấu -->
-    <h2>4. Sử dụng hình ảnh (list-style-image)</h2>
-    <ul class="task-image">
-        <li>Visual Studio Code</li>
-        <li>Google Chrome</li>
-        <li>GitHub</li>
-        <li>Git</li>
-    </ul>
-
-    <!-- Bài 5: Thay đổi vị trí dấu đánh dấu -->
-    <h2>5. Vị trí dấu đánh dấu (list-style-position)</h2>
-    <div class="task-position-container">
-        <div>
-            <h3>Outside (Bên ngoài)</h3>
-            <ul class="task-outside">
-                <li>Đoạn văn bản dài để quan sát rõ vị trí của dấu chấm so với nội dung khi nó xuống dòng.</li>
-                <li>Mục 2</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Inside (Bên trong)</h3>
-            <ul class="task-inside">
-                <li>Đoạn văn bản dài để quan sát rõ vị trí của dấu chấm so với nội dung khi nó xuống dòng.</li>
-                <li>Mục 2</li>
-            </ul>
-        </div>
+    <div class="card">
+        <h3>Thẻ 1 (content-box)</h3>
+        <p>Thẻ này có kích thước thực tế lớn hơn vì padding và border được cộng thêm vào width/height ban đầu.</p>
     </div>
 
-    <!-- Bài 6: Sử dụng thuộc tính rút gọn -->
-    <h2>6. Thuộc tính rút gọn (list-style)</h2>
-    <ul class="task-shorthand">
-        <li>Mục A</li>
-        <li>Mục B</li>
-        <li>Mục C</li>
-    </ul>
+    <div class="card">
+        <h3>Thẻ 2 (border-box)</h3>
+        <p>Thẻ này giữ đúng kích thước 280x150px. Padding và border ép vào bên trong.</p>
+    </div>
 
-    <!-- Bài 7: Tạo kiểu danh sách với màu sắc -->
-    <h2>7. Màu sắc và Khoảng cách</h2>
-    <ul class="task-colors">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-    </ul>
-
-    <!-- Bài 8: Bài tập tổng hợp -->
-    <h2>8. Lộ trình học lập trình Web</h2>
-    <ul class="task-roadmap">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-        <li>GitHub</li>
-    </ul>
+    <div class="card">
+        <h3>Thẻ 3 (border-box)</h3>
+        <p>Tương tự thẻ 2, dễ dàng kiểm soát kích thước tổng thể của thẻ trên bố cục web.</p>
+    </div>
 
 </body>
 </html>
