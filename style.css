@@ -1,0 +1,81 @@
+/* CSS Cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Bài 2: list-style-type */
+.task-square {
+    list-style-type: square;
+}
+
+/* Bài 3: upper-roman */
+.task-roman {
+    list-style-type: upper-roman;
+}
+
+/* Bài 4: list-style-image */
+.task-image {
+    /* Sử dụng icon check nhỏ online làm ví dụ */
+    list-style-image: url('https://cdn-icons-png.flaticon.com/16/190/190411.png');
+}
+
+/* Bài 5: list-style-position */
+.task-position-container {
+    display: flex;
+    gap: 20px;
+}
+.task-outside {
+    list-style-position: outside;
+    border: 1px solid red; /* Khung đỏ để dễ quan sát margin */
+    width: 250px;
+}
+.task-inside {
+    list-style-position: inside;
+    border: 1px solid blue; /* Khung xanh để dễ quan sát margin */
+    width: 250px;
+}
+
+/* Bài 6: list-style rút gọn (type position image) */
+.task-shorthand {
+    list-style: circle inside none;
+}
+
+/* Bài 7: Màu sắc và padding/margin */
+.task-colors {
+    background-color: #f4f4f9;
+    padding: 20px 40px;
+    width: 300px;
+    border-radius: 8px;
+}
+.task-colors li {
+    color: #d9534f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Bài 8: Bài tập tổng hợp */
+.task-roadmap {
+    list-style: decimal outside none;
+    background-color: #e3f2fd;
+    padding: 25px 25px 25px 45px;
+    margin: 10px 0;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+.task-roadmap li {
+    background-color: #bbdefb;
+    color: #0d47a1;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
