@@ -3,24 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập Box Model 1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Thực hành Tạo Menu Dọc Dropdown</title>
+    <style>
+        /* Reset font và khoảng cách cơ bản */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding: 30px;
+            background-color: #f4f6f9;
+        }
+
+        /* Định dạng danh sách ul, li */
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
+            list-style: none;
+            position: relative;
+            width: 120px;
+            height: 30px;
+            padding: 0 20px;
+            background-color: black;
+            line-height: 30px;
+            cursor: pointer;
+            border-bottom: 1px solid #222;
+        }
+
+        /* Định dạng liên kết thẻ a */
+        #menu a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-size: 14px;
+        }
+
+        /* Hiệu ứng rê chuột qua thẻ li */
+        #menu li:hover {
+            background-color: #444;
+        }
+
+        /* Định dạng danh sách con (Submenu) */
+        #menu li ul {
+            position: absolute;
+            top: 0;
+            left: 160px; /* Tránh đè lên menu chính (120px width + 40px padding = 160px) */
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.2s linear;
+        }
+
+        /* Hiển thị danh sách con khi hover vào mục cha */
+        #menu li:hover > ul {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="card">
-        <h3>Thẻ 1 (content-box)</h3>
-        <p>Thẻ này có kích thước thực tế lớn hơn vì padding và border được cộng thêm vào width/height ban đầu.</p>
-    </div>
+    <h2 style="margin-bottom: 20px; color: #333;">Menu Dọc Dropdown</h2>
 
-    <div class="card">
-        <h3>Thẻ 2 (border-box)</h3>
-        <p>Thẻ này giữ đúng kích thước 280x150px. Padding và border ép vào bên trong.</p>
-    </div>
-
-    <div class="card">
-        <h3>Thẻ 3 (border-box)</h3>
-        <p>Tương tự thẻ 2, dễ dàng kiểm soát kích thước tổng thể của thẻ trên bố cục web.</p>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Sản phẩm &#9656;</a>
+                <ul>
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Máy tính bảng</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Dịch vụ &#9656;</a>
+                <ul>
+                    <li><a href="#">Bảo hành</a></li>
+                    <li><a href="#">Sửa chữa</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
     </div>
 
 </body>
