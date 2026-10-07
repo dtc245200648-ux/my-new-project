@@ -1,6 +1,6 @@
-# Bài tập: Tạo bảng danh sách sản phẩm trong HTML
+# Bài tập: Gộp ô trong bảng với rowspan và colspan
 
-Bài tập thực hành xây dựng bảng thông tin sản phẩm trong HTML với các thẻ: `<h1>`, `<table>`, `<tr>`, `<th>`, `<td>`.
+Bài tập thực hành tạo bảng "Lịch họp công ty" trong HTML sử dụng kỹ thuật gộp hàng (`rowspan`) và gộp cột (`colspan`).
 
-## Danh sách file:
-- `index.html`: Mã nguồn chính chứa bảng danh sách sản phẩm.
+## Danh sách tệp:
+- `index.html`: File mã nguồn chính của bài tập.
